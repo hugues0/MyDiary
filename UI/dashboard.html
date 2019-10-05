@@ -216,6 +216,28 @@
     </div>
     
     <!--view entry content-->
+    <!--add new emtry div-->
+    <div class="new-entry">
+        <div class="new-entry-form">
+    
+            <div class="modal-header">
+                <span class="close" onclick="closeDialog()">&times;</span>
+    
+            </div>
+            <form>
+                <p class="input-group">
+                    <label for="new_entry">Title</label>
+                    <input type="text" id="new-title" name="new_entry" placeholder="Write here the title" required="">
+                </p>
+                <textarea name="content" id="txtarea" required="">What's on your mind ?</textarea><br>
+                <input type="submit" value="Save" class="custom-btn" id="share-bt" onclick="counter()">
+    
+            </form>
+    
+        </div>
+    </div>
+
+    <!--add new entry div ends here-->
     
 </body>
 
