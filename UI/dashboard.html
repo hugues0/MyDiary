@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type='text/css' media='screen' href='/MyDiary/UI/css/main.css'>
+    <script src='/MyDiary/UI/js/main.js'></script>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<body class="dashboard">
+    <div id="content">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#" onclick="showAddNew()">Add new entry</a></li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="index.html">Logout</a></li><br><br><br><br><br>
+
+            </ul>
+            <div class="toggle-on">
+                <label for="slider">Toggle on Daily reminders</label><br><br>
+                <label class="switch">
+                    <input type="checkbox" onclick="newFunction()">
+                    <span class="slider2 round" onclick="newFunction()"></span>
+                </label>
+            </div>
+            <br><br>
+            <div class="toggle-on">
+                <label for="counter">Number of entries since registration</label><br><br>
+                <input type="button" class="custom-btn1" value="7" />
+            </div>
+        </div>
+        <div class="container">
+            <h2>Entries</h2>
+            <div class="table-wrapper">
+                <table class="fl-table">
+                    <thead>
+                        <tr>
+                            <th>Entry ID</th>
+                            <th>Created on</th>
+                            <th>Title</th>
+                            <th>Actions</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#2345</td>
+                            <td>25/09/2019 12:26</td>
+                            <td>Today at work</td>
+                            <td>
+                                <span title="Edit entry" onclick="showUpdateEntry()"><i
+                                        class="fas fa-edit"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="View entry" onclick="showViewEntry()"><i
+                                        class="fas fa-eye"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="Delete entry"
+                                    onclick="dialogbox('Are you sure you intend to permanently delete this entry?')"><i
+                                        class="fas fa-trash-alt"></i></span>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>#2346</td>
+                            <td>25/09/2019 12:26</td>
+                            <td>Best day ever</td>
+                            <td>
+                                <span title="Edit entry" onclick="showUpdateEntry()"><i
+                                        class="fas fa-edit"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="View entry" onclick="showViewEntry()"><i
+                                        class="fas fa-eye"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="Delete entry"
+                                    onclick="dialogbox('Are you sure you intend to permanently delete this entry?')"><i
+                                        class="fas fa-trash-alt"></i></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>#2347</td>
+                            <td>25/09/2019 12:26</td>
+                            <td>What i think about my boss</td>
+                            <td>
+                                <span title="Edit entry" onclick="showUpdateEntry()"><i
+                                        class="fas fa-edit"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="View entry" onclick="showViewEntry()"><i
+                                        class="fas fa-eye"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="Delete entry"
+                                    onclick="dialogbox('Are you sure you intend to permanently delete this entry?')"><i
+                                        class="fas fa-trash-alt"></i></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>#2348</td>
+                            <td>25/09/2019 12:26</td>
+                            <td>Some content here</td>
+                            <td>
+                                <span title="Edit entry" onclick="showUpdateEntry()"><i
+                                        class="fas fa-edit"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="View entry" onclick="showViewEntry()"><i
+                                        class="fas fa-eye"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="Delete entry"
+                                    onclick="dialogbox('Are you sure you intend to permanently delete this entry?')"><i
+                                        class="fas fa-trash-alt"></i></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>#2349</td>
+                            <td>25/09/2019 12:26</td>
+                            <td>Technically we dont sleep,we stare at our eyelids</td>
+                            <td>
+                                <span title="Edit entry" onclick="showUpdateEntry()"><i
+                                        class="fas fa-edit"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="View entry" onclick="showViewEntry()"><i
+                                        class="fas fa-eye"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="Delete entry"
+                                    onclick="dialogbox('Are you sure you intend to permanently delete this entry?')"><i
+                                        class="fas fa-trash-alt"></i></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>#2349</td>
+                            <td>25/09/2019 12:26</td>
+                            <td>Technically we dont sleep,we stare at our eyelids</td>
+                            <td>
+                                <span title="Edit entry" onclick="showUpdateEntry()"><i
+                                        class="fas fa-edit"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="View entry" onclick="showViewEntry()"><i
+                                        class="fas fa-eye"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="Delete entry"
+                                    onclick="dialogbox('Are you sure you intend to permanently delete this entry?')"><i
+                                        class="fas fa-trash-alt"></i></span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>#2349</td>
+                            <td>25/09/2019 12:26</td>
+                            <td>Technically we dont sleep,we stare at our eyelids</td>
+                            <td>
+                                <span title="Edit entry" onclick="showUpdateEntry()"><i
+                                        class="fas fa-edit"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="View entry" onclick="showViewEntry()"><i
+                                        class="fas fa-eye"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span title="Delete entry"
+                                    onclick="dialogbox('Are you sure you intend to permanently delete this entry?')"><i
+                                        class="fas fa-trash-alt"></i></span>
+                            </td>
+
+                        </tr>
+
+                    <tbody>
+                </table>
+            </div>
+            <!--pagination-->
+
+            <div class="pagination clearfix">
+                <a href="#">First</a>
+                &nbsp;<a href="#">«</a>
+
+                <a href="#">1</a>
+                <strong>2</strong>
+                <a href="#">3</a>
+
+                <a href="#">»</a>
+                &nbsp;<a href="#">Last</a>
+            </div>
+
+            <!--pagination ends-->
+
+        </div>
+    </div>
+    <footer>
+        <p>
+            Copyright &copy; MyDiary
+        </p>
+    </footer>
+
+    
+</body>
+
+</html>
