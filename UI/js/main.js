@@ -51,14 +51,5 @@ const showViewEntry = () => {
     document.querySelector(".view-entry").style.display = "block";
 }
 
-const newFunction = () => {
-    const status1 = document.querySelector(".slider2");
-    if (status1.style.background-color !== "#ccc" ) {
-        setTimeout(() => {
-            console.log('Alligator!!!!');
-        }, 5000);
-    } else{
-        return;
-    }
-}
+
 
