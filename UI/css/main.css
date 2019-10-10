@@ -302,6 +302,20 @@ input:checked+.slider2:before {
 
 /*toggle on button dashboard ends*/
 
+.labelcounter {
+    height: auto;
+    color: white;
+    border: white 2px solid;
+    border-radius: 25px;
+    padding: 15px 10px 15px 15px;
+    margin: 0px 10px 0px 10px;
+    font-size: 14px;
+    width: auto;
+    margin-bottom: 5px;
+    text-align: left;
+    line-height: 30px;
+}
+
 /*side nav ends*/
 
 /*footer*/
